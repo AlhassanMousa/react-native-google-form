@@ -8,6 +8,12 @@
       "expo-router"
     ],
     "name": "GoogleForms",
-    "slug": "GoogleForms"
+    "slug": "GoogleForms",
+    "android": {
+      "package": "com.GoogleForms.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.GoogleForms.app"
+    }
   }
 }
