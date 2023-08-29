@@ -14,6 +14,10 @@ import { useCheckoutContext } from '../context/CheckoutContext';
 export default function Personal() {
   const { control, handleSubmit } = useForm<PersonalInfo>({
     resolver: zodResolver(PersonalInfoSchema),
+    defaultValues: {
+      name: 'hassan',
+      email: 'hassan@gmail.com',
+    },
   });
 
   const { setPersonal } = useCheckoutContext();
